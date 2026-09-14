@@ -11,7 +11,7 @@ def calcenergy(atoms):
     ekin = atoms.get_kinetic_energy() / len(atoms)
     temperature = ekin / (1.5 * units.kB)
     etot = epot + ekin
-    return epot, ekin, temperature
+    return epot, ekin, temperature, etot
 
 
 def run_md():
